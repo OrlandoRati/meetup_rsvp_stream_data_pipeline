@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Top Venues</title>
+</head>
+<body>
+    <h1>Top Venues</h1>
+    <table>
+        <tr>
+            <th>Venue Name</th>
+            <th>City</th>
+            <th>'Yes' RSVPS</th>
+        </tr>
+        {% for col in data %}
+        <tr>
+            <td>{{ col.venue_name }}</td>
+            <td>{{ col.group_city }}</td>
+            <td>{{ col.count }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
